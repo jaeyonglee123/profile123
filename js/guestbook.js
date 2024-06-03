@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function fetchEntries() {
     try {
-      const response = await axios.get("http://35.173.37.0:8000");
+      const response = await axios.get("http://35.173.37.0:8000/guestbook");
       const entries = response.data.entries;
       console.log(entries);
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const message = document.getElementById("content").value;
 
     try {
-      const response = await axios.post("http://35.173.37.0:8000", {
+      const response = await axios.post("http://35.173.37.0:8000/guestbook", {
         name,
         message,
       });
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const entryId = e.target.getAttribute("data-id");
       try {
         const response = await axios.delete(
-          `http://35.173.37.0:8000/${entryId}`
+          `http://35.173.37.0:8000/guestbook/${entryId}`
         );
 
         if (response.status === 200) {
