@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const guestbookEntries = document.getElementById("guestbook-entries");
 
   async function fetchEntries() {
-    const response = await axios.get("http://127.0.0.1:8000/guestbook/");
+    const response = await axios.get("http://35.173.37.0:8000");
     const entries = response.data.entries;
     console.log(entries);
 
