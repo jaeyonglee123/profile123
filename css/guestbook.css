@@ -1,0 +1,90 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #b1d8b5f1; /* 배경색을 더 밝게 수정 */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px; /* 글씨 크기 hobby와 일치 */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px; /* 글씨 간격 조정 */
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#guestbook-entries {
+  list-style-type: none;
+  padding: 0;
+}
+
+.entry {
+  background: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.entry header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entry time {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.entry button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.entry button:hover {
+  background: #ff3f31;
+}

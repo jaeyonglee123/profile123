@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "profile123",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "profile_back"
+  }
+}

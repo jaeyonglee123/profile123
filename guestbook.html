@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guestbook</title>
+    <link rel="stylesheet" href="./css/guestbook.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/guestbook.js"></script>
+    <script src="./js/navigation.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="main.html"><b>main</b></a>
+          </li>
+          <li>
+            <a href="hobby.html"><b>hobby</b></a>
+          </li>
+          <li>
+            <a href="guestbook.html"><b>guestbook</b></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Guestbook</h1>
+    <form id="guestbook-form">
+      <input type="text" id="author" placeholder="Your Name" required />
+      <textarea id="content" placeholder="Your Message" required></textarea>
+      <button type="submit">방명록 추가하기</button>
+    </form>
+    <ul id="guestbook-entries"></ul>
+  </body>
+</html>
