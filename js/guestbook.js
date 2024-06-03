@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const name = document.getElementById("author").value;
     const message = document.getElementById("content").value;
 
-    const response = await axios.post("http://127.0.0.1:8000/guestbook/", {
+    const response = await axios.post("http://35.173.37.0:8000", {
       name,
       message,
     });
@@ -42,9 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   guestbookEntries.addEventListener("click", async function (e) {
     if (e.target.tagName === "BUTTON") {
       const entryId = e.target.getAttribute("data-id");
-      const response = await axios.delete(
-        `http://127.0.0.1:8000/guestbook/${entryId}`
-      );
+      const response = await axios.delete(`http://35.173.37.0:8000${entryId}`);
 
       if (response.status === 200) {
         fetchEntries();
